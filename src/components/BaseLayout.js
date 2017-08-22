@@ -19,25 +19,6 @@ export default class BaseLayout extends Component {
       width: '75%'
     }
 
-    /*
-      Creat two inline variables:
-      titleStyle (font, Arizonia. size, 150) for 'restaurant-name'
-      subtitleStyle (font, Raleway. size, 80) for 'subtitle'
-      */
-
-    /*
-      Create an inline.
-      headerSytle:
-      "textAlign": "center",
-      "height": "30vw",
-      "color": "#fff",
-      "backgroundImage": "url(http://www.joysthaifood.com/wp-content/uploads/2016/03/Thai-fish-Lemon-Soup.jpg)",
-      "backgroundSize": "cover",
-      "backgroundPosition": "center",
-      "boxShadow": "1px 17px 5px 0px rgba(0, 0, 0, 0.75)",
-      "fontFamily": "decorative",
-      */
-
     let headerStyle = {
       textAlign: 'center',
       height: '30vw',

@@ -6,8 +6,6 @@ import Desserts from './Desserts'
 import Entrees from './Entrees'
 
 class App extends Component {
-  // Set initial state for appetizers, entrees, and desserts.
-  // All should be set to empty arrays.
   constructor(props) {
     super(props)
 
@@ -17,12 +15,6 @@ class App extends Component {
       desserts: []
     }
   }
-
-  // Lifecycle method
-  // Fetch from http://tiny-lasagna-server.herokuapp.com/collections/reactthaimenu.
-  // The response should return an object with appetizers, entres, and desserts.
-  // Set these to state.
-  // YOUR CODE HERE>
 
   componentDidMount() {
     let url = 'http://tiny-lasagna-server.herokuapp.com/collections/reactthaimenu'
@@ -34,8 +26,6 @@ class App extends Component {
   }
 
   render() {
-    // Your render should consist of the BaseLayout with the following children components: Appetizers, Entrees, and Dessert.
-    // Each component needs to receive state via props.
     return (
       <div>
         <div>
@@ -47,9 +37,6 @@ class App extends Component {
         </div>
       </div>
     )
-    /*
-        BaseLayout and nested components
-        */
   }
 }
 

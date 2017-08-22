@@ -2,12 +2,9 @@ import React, { Component } from 'react'
 
 export default class Desserts extends Component {
   render() {
-    // Set items' value....
     let items = this.props.items
-    // Since the items do not have a key, let's create one.
     let key = 0
-    let desserts = items.map(items => {
-      // Increment the key for each item.
+    let desserts = items.map(item => {
       key++
       console.log(key)
       console.log(items)
@@ -15,13 +12,13 @@ export default class Desserts extends Component {
         <tbody key={key}>
           <tr>
             <td>
-              {items.dish}
+              {item.dish}
             </td>
             <td>
-              {items.description}
+              {item.description}
             </td>
             <td>
-              {items.price}
+              {item.price}
             </td>
           </tr>
         </tbody>

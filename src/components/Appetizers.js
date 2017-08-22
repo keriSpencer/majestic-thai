@@ -3,25 +3,20 @@ import '../styles/App.css'
 
 export default class Appetizers extends Component {
   render() {
-    // Set items' value....
-    // let items = this.props
-    // console.log(items)
-    // Since the items do not have a key, let's create one.
     let key = 0
-    let appetizers = this.props.items.map(items => {
-      // Increment the key so that each items has one.
+    let appetizers = this.props.items.map(item => {
       key++
       return (
         <tbody key={key}>
           <tr>
             <td>
-              {items.dish}
+              {item.dish}
             </td>
             <td>
-              {items.description}
+              {item.description}
             </td>
             <td>
-              {items.price}
+              {item.price}
             </td>
           </tr>
         </tbody>

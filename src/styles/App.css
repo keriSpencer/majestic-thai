@@ -1,10 +1,16 @@
 body {
-  background-color: #2F2D28;
+  background-color: #2f2d28;
 }
-nav{
-  margin-top: 30px;
+nav {
+  margin-top: 50px;
 }
 
-.menu{
+.menu {
   background-color: white;
+}
+
+.h4,
+h4 {
+  font-size: 18px;
+  margin-top: 44px;
 }

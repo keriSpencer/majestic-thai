@@ -4,21 +4,26 @@ import Appetizers from './Appetizers'
 
 export default class BaseLayout extends Component {
   render() {
+    let titleStyle = {
+      fontFamily: 'Arizonia',
+      fontSize: 150
+    }
+
+    let subtitleStyle = {
+      fontFamily: 'Raleway',
+      size: 80
+    }
+
+    let containerStyle = {
+      backgroundColor: 'white',
+      width: '75%'
+    }
+
     /*
       Creat two inline variables:
       titleStyle (font, Arizonia. size, 150) for 'restaurant-name'
       subtitleStyle (font, Raleway. size, 80) for 'subtitle'
       */
-
-    let titleStyle = {
-      fontFamily: 'Arizonia',
-      size: 150
-    }
-
-    let subtitleStyle = {
-      font: 'Raleway',
-      size: 80
-    }
 
     /*
       Create an inline.
@@ -63,8 +68,8 @@ export default class BaseLayout extends Component {
               </li>
             </ul>
           </div>
-          <div className="col-md-12 header">
-            <div className="header-title" style={headerStyle}>
+          <div className="col-md-12 header" style={headerStyle}>
+            <div className="header-title">
               <h1 className="restaurant-name" style={titleStyle}>
                 Majestic Thai
               </h1>
@@ -74,7 +79,7 @@ export default class BaseLayout extends Component {
             </div>
           </div>
         </nav>
-        <div>
+        <div className="container" style={containerStyle}>
           {this.props.children}
         </div>
         <div />

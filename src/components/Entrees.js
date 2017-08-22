@@ -1,31 +1,36 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react'
 
 export default class Entrees extends Component {
-
-  render(){
+  render() {
     // Set items' value....
-    let items = '';
+    let items = this.props.items
     // Since the items do not have a key, let's create one.
-    let key = 0;
-    let entres = items.map((items)=>{
+    let key = 0
+    let entrees = items.map(items => {
       // Increment the key for each item.
-      key++;
+      key++
       console.log(key)
-      console.log(items);
+      console.log(items)
       return (
         <tbody key={key}>
-           <tr>
-             <td>{items.dish}</td>
-             <td>{items.description}</td>
-             <td>{items.price}</td>
-           </tr>
+          <tr>
+            <td>
+              {items.dish}
+            </td>
+            <td>
+              {items.description}
+            </td>
+            <td>
+              {items.price}
+            </td>
+          </tr>
         </tbody>
       )
     })
     return (
       <div className="row">
         <div className="col-md-6 col-md-offset-3">
-          <h4>Entres</h4>
+          <h4>Entrees</h4>
           <table className="table">
             <thead>
               <tr>
@@ -34,10 +39,10 @@ export default class Entrees extends Component {
                 <th className="col-md-1">Price</th>
               </tr>
             </thead>
-            {entres}
+            {entrees}
           </table>
         </div>
       </div>
-    );
+    )
   }
 }

@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
+import '../styles/App.css'
 
 export default class Appetizers extends Component {
   render() {
     // Set items' value....
-    // let items = '',
-    // // Since the items do not have a key, let's create one.
-    // let key = 0;
-    let appetizers = items.map(items => {
+    // let items = this.props
+    // console.log(items)
+    // Since the items do not have a key, let's create one.
+    let key = 0
+    let appetizers = this.props.items.map(items => {
       // Increment the key so that each items has one.
       key++
       return (
